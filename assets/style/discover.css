@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+}
+
+/* DISCOVER PAGE */
+
+.discover{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: Gotham, sans-serif;
+}
+
+.discover .discover__interface{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.discover__interface .navigation{
+    margin-bottom: 5%;
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover__interface .navigation .navigation__link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover__interface .navigation a{
+    text-decoration: none;
+    width: 20%;
+    height: 100%;
+    margin: 1vw;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFE600;
+}
+
+.discover .searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 20%;
+    border: 2px #FFE600 solid;
+}
+
+.discover .searchbar form{
+    width: 100%;
+    text-align: center;
+}
+
+.discover .searchbar label{
+    display: block;
+    font-size: 1.3vw;
+}
+
+.discover .searchbar input{
+    display: inline-block;
+    margin: 3% auto 0 auto;
+    font-size: 2vw;
+    width: 50%;
+    text-align: center;
+}
+
+.discover .searchbar button{
+    display: inline-block;
+    background-color: black;
+    border-color: #FFE600;
+    padding: 0.5vw;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.discover .searchbar button .fa-searchengin{
+    font-size: 1.5vw;
+    color: #FFE600;
+}
+
+/* CHARACTER PAGE */
+
+.hero{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: Gotham, sans-serif;
+}
+
+.hero.character{
+    display: flex;
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.character .button__back{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.character .button__back .back{
+    width: 5vw;
+    height: 5vw;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character .button__back a{
+    text-decoration: none;
+}
+
+.character .button__back a:hover .fa-users{
+    transform: scale(1.2);
+}
+
+.character .button__back .fa-users{
+    transition: transform 0.5s ease;
+    font-size: 2vw;
+    color: #FFE600;
+}
+
+.character span, .character p{
+    font-weight: 200;
+}
+
+.character__image{
+    block-size: inherit;
+}
+
+.character__image img{
+    height: 100%;
+}
+
+.character__details{
+    padding: 2vw 3.5vw;
+    width: 100%;
+}
+
+.character__name h2{
+    font-size: 2.2em;
+    margin: 0 0 1.5vw 0;
+}
+
+.character__fullname h3{
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+.biography{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.biography .fas.fa-circle{
+    color: #FFE600;
+    font-size: 0.5vw;
+    vertical-align: middle;
+    margin-right: 0.5vw;
+}
+
+.biography p{
+    display: inline;
+}
+
+.biography h4{
+    margin: 1.5vw 0 1vw 0;
+}
+
+.biography__history>div{
+    margin-top: 1vw;
+}
+
+.biography__appearance{
+    display: inline-block;
+}
+
+.biography--part1{
+    width: 75%;
+}
+
+.biography--part2{
+    margin-left: 10%;
+}
+
+.character .buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    right: 0;
+    width: 12%;
+    background-color: #FFE600;
+    text-align: center;
+}
+
+.character .buttons a{
+    width: 50%;
+}
+
+.character .buttons a:first-of-type{
+    border-right: #000000 1px solid;
+}
+
+.character .buttons a:last-of-type{
+    border-left: #000000 1px solid;
+}
+
+.character .buttons .fas{
+    font-size: 3vw;
+    color: #ffffff;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.character .buttons a:hover .fas{
+    color: #000000;
+    transform: scale(1.3);
+}
+
+/* ALL CHARACTERS PAGE */
+
+.characters__container{
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: Gotham, sans-serif;
+    padding-top: 1vw;
+}
+
+.characters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-start;
+    position: relative;
+    width: 80vw;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 3vw;
+}
+
+.characters>div:not(.buttons){
+    width: 17%;
+    text-align: center;
+    margin: 0 1%;
+}
+
+.characters a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.characters .character__image{
+    height: 80%;
+    overflow: hidden;
+}
+
+.characters .character__image img{
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.characters .character__name h4{
+    transition: color 0.5s ease, transform 0.5s ease;
+    font-size: 1.3vw;
+    margin: 2vw 0 1.2vw 0;
+}
+
+.characters a:hover .character__name h4{
+    color: #FFE600;
+    transform: scale(1.2);
+}
+
+.characters .character:nth-child(odd) a:hover .character__image img{
+    transform: scale(1.2) rotateZ(-5deg);
+}
+
+.characters .character:nth-child(even) a:hover .character__image img{
+    transform: scale(1.2) rotateZ(5deg);
+}
+
+.characters .buttons{
+    width: 100%;
+    height: 4vw;
+    position: relative;
+    margin: 2vw 0 1vw 0;
+}
+
+.characters .buttons .fas{
+    font-size: 3vw;
+    color: #ffffff;
+    vertical-align: middle;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.characters .buttons a span{
+    margin: 0 1vw;
+    transition: color 0.5s ease, transform 0.5s ease;
+    display: inline-block;
+}
+
+.characters .buttons .previous{
+    position: absolute;
+    left: 0;
+    border: #FFE600 1px solid;
+    padding: 0.5vw 1vw;
+}
+
+.characters .buttons .next{
+    position: absolute;
+    right: 0;
+    border: #FFE600 1px solid;
+    padding: 0.5vw 1vw;
+}
+
+.characters .buttons a:hover .fas{
+    color: #FFE600;
+    transform: scale(1.3);
+}
+
+.characters .buttons a:hover span{
+    color: #FFE600;
+    transform: scale(1.15);
+}
+
+/* SEARCH PAGE */
+
+.results{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    background-color: #000000;
+    justify-content: center;
+    align-self: safe center;
+    color: #ffffff;
+    overflow-x: hidden;
+    font-family: Gotham, sans-serif;
+}
+
+.results__display{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 5vh;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.results__display .title{
+    display: flex;
+}
+
+.results__display .title h1{
+    font-size: 1.5vw;
+    display: inline;
+    padding: 2vw 0 4vw 0;
+}
+
+.results__display .title h1.name{
+    color: #FFE600;
+    margin-left: 0.5vw;
+}
+
+.results__display .results__found{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.results__display .error{
+    padding: 0 0 2vw 0;
+}
+
+.results__display .results__found .result{
+    width: 20%;
+    margin: 1vw;
+    text-align: center;
+}
+
+.results__display .results__found .result a{
+    text-decoration: none;
+    color: #FFE600;
+}
+
+.results__found h3{
+    font-size: 1.5vw;
+}
+
+.results__found .result__image{
+    margin-top: 1vw;
+    height: 75%;
+    overflow: hidden;
+}
+
+.results__found .result__image img{
+    width: 100%;
+}
