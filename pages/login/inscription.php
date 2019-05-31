@@ -27,7 +27,7 @@
             <?php if(isset($errorMessage)){ echo '<h4>'.$errorMessage.'</h4>'; } ?>
             <form action="../../global/validation.php" method="post" class="formulary">
                 <label for="pseudo">Your SuperHero Name :</label>
-                <input type="text" name="pseudo" id="pseudo"><br>
+                <input type="text" name="pseudo" id="pseudo" maxlength="10"><br>
                 <div class="row__name">
                     <div>
                             <label for="firstName">First Name :</label><br>
